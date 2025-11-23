@@ -65,7 +65,7 @@ const MainContent = ({ activeSection, user }) => {
 
                 <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">Roll Number</label>
-                    <input type="text" className="form-input" placeholder="Enter roll number" />
+                    <input type="number" className="form-input" placeholder="Enter roll number" />
                 </div>
 
                 <div>
@@ -75,7 +75,7 @@ const MainContent = ({ activeSection, user }) => {
 
                 <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">Phone</label>
-                    <input type="tel" className="form-input" placeholder="Enter phone number" />
+                    <input type="number" className="form-input" placeholder="Enter phone number" />
                 </div>
 
                 <div className="md:col-span-2">

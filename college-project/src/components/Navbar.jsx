@@ -4,11 +4,11 @@ const Navbar = ({ activeSection, onSectionChange, onLogout, user }) => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     const navItems = [
-        { id: 'home', label: 'Home', icon: '🏠' },
-        { id: 'form', label: 'Student Form', icon: '📝' },
-        { id: 'library', label: 'Library', icon: '📚' },
-        { id: 'about', label: 'About Us', icon: '👥' },
-        { id: 'contact', label: 'Contact', icon: '📞' }
+        { id: 'home', label: 'Home',  },
+        { id: 'form', label: 'Student Form',  },
+        { id: 'library', label: 'Library',  },
+        { id: 'about', label: 'About Us',  },
+        { id: 'contact', label: 'Contact',  }
     ];
 
     const toggleMobileMenu = () => {
@@ -22,7 +22,7 @@ const Navbar = ({ activeSection, onSectionChange, onLogout, user }) => {
 
     return (
     <nav className="bg-gradient-to-r from-blue-800 to-purple-800 shadow-lg sticky top-0 z-50">
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4">
         <div className="flex justify-between items-center h-20">
           {/* Logo and College Name */}
         <div className="flex items-center space-x-3">
@@ -32,7 +32,7 @@ const Navbar = ({ activeSection, onSectionChange, onLogout, user }) => {
             </div>
             </div>
             <div className="text-white flex flex-col">
-                <h1 className="text-lg font-bold">Nepalgunj Campus of Management & Technology</h1>
+                <h1 className="text-lg font-bold">Nepalgunj Campus</h1>
                 <p className="text-xs text-blue-200">Department of Computer Applications</p>
             </div>
         </div>
