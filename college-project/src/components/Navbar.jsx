@@ -4,12 +4,12 @@ const Navbar = ({ activeSection, onSectionChange, onLogout, user }) => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     const navItems = [
-        { id: 'home', label: 'Home' },
-        { id: 'form', label: 'Student Form'  },
-        { id: 'library', label: 'Library'  },
-        { id: 'about', label: 'About Us'  },
-        { id: 'contact', label: 'Contact' }
-    ];x
+        { id: 'home', label: 'Home',  },
+        { id: 'form', label: 'Student Form',  },
+        { id: 'library', label: 'Library',  },
+        { id: 'about', label: 'About Us',  },
+        { id: 'contact', label: 'Contact',  }
+    ];
 
     const toggleMobileMenu = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
