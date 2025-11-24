@@ -5,7 +5,6 @@ import Login from "./components/Login.jsx"
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [activeSection, setActiveSection] = useState('home');
   const [user, setUser] = useState(null);
 
   const handleLogin = (userData) => {
@@ -17,10 +16,6 @@ function App() {
   const handleLogout = () => {
     setIsLoggedIn(false);
     setUser(null);
-  };
-
-  const handleSectionChange = (section) => {
-    setActiveSection(section);
   };
 
   return (
