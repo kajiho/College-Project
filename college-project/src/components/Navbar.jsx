@@ -4,12 +4,12 @@ const Navbar = ({ activeSection, onSectionChange, onLogout, user }) => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     const navItems = [
-        { id: 'home', label: 'Home',  },
-        { id: 'form', label: 'Student Form',  },
-        { id: 'library', label: 'Library',  },
-        { id: 'about', label: 'About Us',  },
-        { id: 'contact', label: 'Contact',  }
-    ];
+        { id: 'home', label: 'Home' },
+        { id: 'form', label: 'Student Form'  },
+        { id: 'library', label: 'Library'  },
+        { id: 'about', label: 'About Us'  },
+        { id: 'contact', label: 'Contact' }
+    ];x
 
     const toggleMobileMenu = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -70,7 +70,7 @@ const Navbar = ({ activeSection, onSectionChange, onLogout, user }) => {
 
           {/* Mobile menu button */}
         <div className="md:hidden flex items-center space-x-2">
-            <span className="text-white text-sm">Hi, {user?.username}</span>
+            <span className="text-white text-sm"> {user?.username}</span>
             <button
             onClick={toggleMobileMenu}
             className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-blue-300 focus:outline-none"

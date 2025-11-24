@@ -35,7 +35,8 @@ function App() {
           />
           <MainContent activeSection={activeSection} user={user} />
         </>
-      ) : (
+      ):
+      (
         <Login onLogin={handleLogin} />
       )}
     </div>
