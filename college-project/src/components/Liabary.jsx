@@ -51,7 +51,16 @@ const Library = () => {
             { id: 2, name: 'Data Communications and Networking', author: 'Behrouz A. Forouzan', edition: '5th', available: true },
             { id: 3, name: 'TCP/IP Protocol Suite', author: 'Behrouz A. Forouzan', edition: '4th', available: true }
         ]
-    }
+    },
+    {
+        id: 6,
+        subject: 'Web Technologies',
+        books: [
+            { id: 1, name: 'Web Technologies: A Computer Science Perspective', author: 'Jeffrey C. Jackson', edition: '1st', available: true },
+            { id: 2, name: 'Learning Web Design', author: 'Jennifer Niederst Robbins', edition: '5th', available: true },
+            { id: 3, name: 'HTML and CSS: Design and Build Websites', author: 'Jon Duckett', edition: '1st', available: true }
+        ]
+    },
     ]);
 
     const subjects = ['all', ...bcaBooks.map(item => item.subject)];
@@ -118,7 +127,7 @@ const Library = () => {
 return (
     <div className="fade-in">
         <div className="section-card">
-        <h2 className="text-3xl font-bold text-gray-800 mb-2">📚 BCA Library Management System</h2>
+        <h2 className="text-3xl font-bold text-gray-800 mb-2">Welcome to BCA Library </h2>
         <p className="text-gray-600 mb-6">Explore our extensive collection of BCA course books and resources</p>
         
         {/* Search and Filter Section */}
