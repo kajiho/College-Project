@@ -69,7 +69,8 @@ const MainContent = () => {
     <div className="fade-in bg-gray-700">
         <div className="section-card">
         <h2 className="text-3xl font-bold text-gray-800 mb-6">Student Information Form</h2>
-        <form className="grid grid-cols-1 md:grid-cols-2 gap-6" onSubmit={(e) => {
+        <form className="grid grid-cols-1 md:grid-cols-2 gap-6"
+        onSubmit={(e) => {
             e.preventDefault();
             alert('✅ Student form submitted successfully! We will contact you soon.');
         }}>
@@ -110,10 +111,10 @@ const MainContent = () => {
         return (
           <div className="fade-in">
             <div className="section-card">
-              <h2 className="text-3xl font-bold text-gray-800 mb-6">About Tech Innovators College</h2>
+              <h2 className="text-3xl font-bold text-gray-800 mb-6">Nepalgunj Campus of Management & Technology</h2>
               <div className="prose max-w-none">
                 <p className="text-gray-600 mb-4">
-                  Welcome to Tech Innovators College, a premier institution dedicated to excellence in computer education. 
+                  Welcome to Nepalgunj Campus of Management & Technology, a premier institution dedicated to excellence in computer education. 
                   Established with a vision to create future technology leaders, we offer comprehensive BCA programs that 
                   blend theoretical knowledge with practical skills.
                 </p>
@@ -142,7 +143,10 @@ const MainContent = () => {
           <div className="fade-in">
             <div className="section-card">
               <h2 className="text-3xl font-bold text-gray-800 mb-6">Contact Us</h2>
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8" onSubmit={(e) => {
+            e.preventDefault();
+            alert('✅ Your message was sent successfully! We will contact you soon.');
+        }}>
                 <div>
                   <h3 className="text-xl font-semibold text-gray-800 mb-4">Get in Touch</h3>
                   <div className="space-y-4">
@@ -152,7 +156,7 @@ const MainContent = () => {
                       </div>
                       <div>
                         <p className="font-medium">Address</p>
-                        <p className="text-gray-600">123 Tech Park, Innovation Road, Bangalore - 560001</p>
+                        <p className="text-gray-600">Ganeshman Chowk, Surkhet Road, Nepalgunj</p>
                       </div>
                     </div>
                     <div className="flex items-center space-x-3">
@@ -170,7 +174,7 @@ const MainContent = () => {
                       </div>
                       <div>
                         <p className="font-medium">Email</p>
-                        <p className="text-gray-600">bca@techinnovators.edu.in</p>
+                        <p className="text-gray-600">bca@nepalgunjcampus.edu.in</p>
                       </div>
                     </div>
                   </div>

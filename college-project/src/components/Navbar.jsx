@@ -28,13 +28,13 @@ const Navbar = ({ user, onLogout }) => {
           {/* Logo and College Name */}
           <div className="flex items-center space-x-3">
             <Link to="/" className="flex items-center space-x-3">
-              <div className="flex-shrink-0 bg-white rounded-full p-2">
-                <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-white font-bold text-sm">
-                  CLG
+              <div className="flex-shrink-0 bg-white rounded-full p-1">
+                <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-white font-bold text-sm">
+                  NCMT
                 </div>
               </div>
               <div className="text-white">
-                <h1 className="text-lg font-bold">Tech Innovators College</h1>
+                <h1 className="text-lg font-bold">Nepalgunj Campus</h1>
                 <p className="text-xs text-blue-200">Department of Computer Applications</p>
               </div>
             </Link>
@@ -71,7 +71,7 @@ const Navbar = ({ user, onLogout }) => {
             </button>
           </div>
 
-          {/* Mobile menu button */}
+          {/*  menu button */}
           <div className="md:hidden flex items-center space-x-2">
             <span className="text-white text-sm">Hi, {user?.username}</span>
             <button
@@ -87,7 +87,7 @@ const Navbar = ({ user, onLogout }) => {
           </div>
         </div>
 
-        {/* Mobile Navigation Menu */}
+        {/* Navigation Menu */}
         <div className={`md:hidden transition-all duration-300 overflow-hidden ${
           isMobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
         }`}>

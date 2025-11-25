@@ -21,7 +21,7 @@ function App() {
     setUser(null);
   };
 
-   const handleSectionChange = (section) => {
+  const handleSectionChange = (section) => {
     setActiveSection(section);
   };
 
