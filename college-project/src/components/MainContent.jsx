@@ -115,16 +115,16 @@ const MainContent = () => {
               <div className="prose max-w-none">
                 <p className="text-gray-600 mb-4">
                   Welcome to Nepalgunj Campus of Management & Technology, a premier institution dedicated to excellence in computer education. 
-                  Established with a vision to create future technology leaders, we offer comprehensive BCA programs that 
+                  Established with a vision to create future technology leaders, we offer comprehensive BCA programs that
                   blend theoretical knowledge with practical skills.
                 </p>
                 
                 <h3 className="text-xl font-semibold text-gray-800 mb-3">Our Mission</h3>
                 <p className="text-gray-600 mb-4">
-                  To provide quality education in computer applications that empowers students with technical expertise, 
+                  To provide quality education in computer applications that empowers students with technical expertise,
                   critical thinking abilities, and ethical values to succeed in the dynamic IT industry.
                 </p>
-
+                
                 <h3 className="text-xl font-semibold text-gray-800 mb-3">BCA Program Highlights</h3>
                 <ul className="list-disc list-inside text-gray-600 mb-4 space-y-2">
                   <li>Comprehensive curriculum covering latest technologies</li>
