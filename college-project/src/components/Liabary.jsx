@@ -199,11 +199,11 @@ return (
                         <span>Edition: {book.edition}</span>
                     </div>
                     <div className="flex space-x-2">
-                    <button 
+                    <button
                         onClick={() => book.available ? handleBorrowBook(subject.id, book.id) : handleReturnBook(subject.id, book.id)}
                         className={`flex-1 px-3 py-2 rounded text-sm font-medium transition-colors duration-300 ${
-                            book.available 
-                            ? 'bg-blue-500 hover:bg-blue-600 text-white' 
+                            book.available
+                            ? 'bg-blue-500 hover:bg-blue-600 text-white'
                             : 'bg-gray-500 hover:bg-gray-600 text-white'
                         }`}
                     >

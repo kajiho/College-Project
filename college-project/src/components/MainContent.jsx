@@ -1,3 +1,4 @@
+/* eslint-disable no-unreachable */
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import Library from "./Liabary.jsx"
@@ -110,21 +111,71 @@ const MainContent = () => {
       case 'about':
         return (
           <div className="fade-in">
+            <div className="bg-white rounded-lg shadow-lg p-8">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <div>
+                  <h2 className="text-3xl font-bold text-gray-800 mb-6">About Nepalgunj Campus</h2>
+                  <p className="text-gray-600 mb-4">
+                    Welcome to Nepalgunj Campus of Management & Technology, a premier institution dedicated to excellence in computer education.
+                    Established with a vision to create future technology leaders, we offer comprehensive BCA programs that blend theoretical knowledge with practical skills.
+                  </p>
+                  <h3 className="text-xl font-semibold text-gray-800 mb-3">Our Mission</h3>
+                  <p className="text-gray-600 mb-4">
+                    To provide quality education in computer applications that empowers students with technical expertise, critical thinking abilities, and ethical values to succeed in the dynamic IT industry.
+                  </p>
+                  <button className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300">
+                    Learn More
+                  </button>
+                </div>
+                <div>
+                  <img
+                    src="https://images.unsplash.com/photo-1565688534245-05d6b5be184a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" // Placeholder classroom image
+                    alt="Campus Classroom"
+                    className="rounded-lg shadow-md w-full"
+                  />
+                </div>
+              </div>
+              <div className="mt-8">
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">BCA Program Highlights</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                  <div className="bg-gray-50 p-4 rounded-lg">
+                    <p className="text-gray-600">✅ Comprehensive curriculum covering latest technologies</p>
+                  </div>
+                  <div className="bg-gray-50 p-4 rounded-lg">
+                    <p className="text-gray-600">✅ Industry-experienced faculty members</p>
+                  </div>
+                  <div className="bg-gray-50 p-4 rounded-lg">
+                    <p className="text-gray-600">✅ State-of-the-art computer labs and library</p>
+                  </div>
+                  <div className="bg-gray-50 p-4 rounded-lg">
+                    <p className="text-gray-600">✅ Regular workshops and guest lectures</p>
+                  </div>
+                  <div className="bg-gray-50 p-4 rounded-lg">
+                    <p className="text-gray-600">✅ 100% placement assistance</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        );
+
+        return (
+          <div className="fade-in">
             <div className="section-card">
               <h2 className="text-3xl font-bold text-gray-800 mb-6">Nepalgunj Campus of Management & Technology</h2>
               <div className="prose max-w-none">
                 <p className="text-gray-600 mb-4">
                   Welcome to Nepalgunj Campus of Management & Technology, a premier institution dedicated to excellence in computer education. 
-                  Established with a vision to create future technology leaders, we offer comprehensive BCA programs that 
+                  Established with a vision to create future technology leaders, we offer comprehensive BCA programs that
                   blend theoretical knowledge with practical skills.
                 </p>
                 
                 <h3 className="text-xl font-semibold text-gray-800 mb-3">Our Mission</h3>
                 <p className="text-gray-600 mb-4">
-                  To provide quality education in computer applications that empowers students with technical expertise, 
+                  To provide quality education in computer applications that empowers students with technical expertise,
                   critical thinking abilities, and ethical values to succeed in the dynamic IT industry.
                 </p>
-
+                
                 <h3 className="text-xl font-semibold text-gray-800 mb-3">BCA Program Highlights</h3>
                 <ul className="list-disc list-inside text-gray-600 mb-4 space-y-2">
                   <li>Comprehensive curriculum covering latest technologies</li>
