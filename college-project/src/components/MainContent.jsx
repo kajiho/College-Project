@@ -68,7 +68,7 @@ const MainContent = () => {
         return (
     <div className="fade-in bg-gray-700">
         <div className="section-card">
-        <h2 className="text-3xl font-bold text-gray-800 mb-6">Student Information Form</h2>
+        <h2 className="text-3xl font-bold text-gray-800 mb-6">Student Personal Information</h2>
         <form className="grid grid-cols-1 md:grid-cols-2 gap-6"
         onSubmit={(e) => {
             e.preventDefault();
