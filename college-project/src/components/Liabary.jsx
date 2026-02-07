@@ -67,13 +67,13 @@ const Library = () => {
 
   // Function to handle book borrowing
     const handleBorrowBook = (subjectId, bookId) => {
-        setBcaBooks(prevBooks => 
+        setBcaBooks(prevBooks =>
         prevBooks.map(subject => {
             if (subject.id === subjectId) {
                 return {
                 ...subject,
-                    books: subject.books.map(book => 
-                    book.id === bookId 
+                    books: subject.books.map(book =>
+                    book.id === bookId
                 ? { ...book, available: false }
                 : book
             )
@@ -86,13 +86,13 @@ const Library = () => {
 
   // Function to handle book return
     const handleReturnBook = (subjectId, bookId) => {
-        setBcaBooks(prevBooks => 
+        setBcaBooks(prevBooks =>
             prevBooks.map(subject => {
                 if (subject.id === subjectId) {
                 return {
                 ...subject,
-                books: subject.books.map(book => 
-                book.id === bookId 
+                books: subject.books.map(book =>
+                book.id === bookId
                     ? { ...book, available: true }
                     : book
             )
@@ -112,7 +112,7 @@ const Library = () => {
 
     const filteredBooks = bcaBooks.filter(subject => {
     const matchesSubject = selectedSubject === 'all' || subject.subject === selectedSubject;
-    const matchesSearch = subject.books.some(book => 
+    const matchesSearch = subject.books.some(book =>
         book.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
         book.author.toLowerCase().includes(searchTerm.toLowerCase())
     );
