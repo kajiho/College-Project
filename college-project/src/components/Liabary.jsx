@@ -103,7 +103,7 @@ const Library = () => {
     );
 
     // Remove from borrowed books list
-    setBorrowedBooks(prev => 
+    setBorrowedBooks(prev =>
     prev.filter(book => !(book.id === bookId && book.subject === bcaBooks.find(s => s.id === subjectId)?.subject))
     );
 
